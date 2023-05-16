@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Task List</title>
+  </head>
+  <body >
+    <h1 class="cabecalho">Task List</h1>
+    <div class="faixa"></div>
+
+    <form action="/" method="POST">
+      {% for item in items %}
+      <div class="task">
+        <input type="checkbox" name="task" value="{{ item }}"> {{ item }}
+      </div>
+      {% endfor %}
+      <a href="{{ url_for('new_task') }}" class="btn-adicionar">Adicionar</a>
+    </form>
+  </body>
+</html>
