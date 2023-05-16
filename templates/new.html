@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>new item</title>
+  </head>
+  <body>
+    <form action="/add-task" method="POST">
+      <label for="task">Task:</label>
+      <input type="text" id="task" name="task">
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description">
+      <button type="submit">Adicionar</button>
+    </form>
+    <a href="/" class="btn-cancelar">Cancelar</a>
+  </body>
+</html>
