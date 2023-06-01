@@ -33,6 +33,10 @@ a:hover {
   background-color: #414D69;
 }
 
+button:hover {
+  background-color: #414D69;
+}
+
 .btn-cancelar {
   display: inline-block;
   padding: 8px 16px;
@@ -45,4 +49,18 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.btn-add {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #687CA8;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 120px;
 }

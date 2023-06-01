@@ -12,6 +12,8 @@ def home():
 def add_task():
   task = request.form.get("task")
   description = request.form.get("description")
+  if task or description == '':
+    return redirect("/")
   db[task] = description
   return redirect("/")
 
